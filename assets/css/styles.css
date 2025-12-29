@@ -7,6 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-200: oklch(88.5% 0.062 18.334);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
@@ -337,6 +339,10 @@
   .rounded-\[16px\] {
     border-radius: 16px;
   }
+  .border-1 {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -351,6 +357,12 @@
   .border-\[\#E5E5E5\] {
     border-color: #E5E5E5;
   }
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
+  }
+  .border-red-200 {
+    border-color: var(--color-red-200);
+  }
   .bg-\[\#0A4A82\] {
     background-color: #0A4A82;
   }
@@ -360,11 +372,20 @@
   .bg-\[\#235390\] {
     background-color: #235390;
   }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+  .bg-red-200 {
+    background-color: var(--color-red-200);
+  }
   .bg-transparent {
     background-color: transparent;
   }
   .bg-\[url\(\'\.\.\/assets\/img\/background\.png\'\)\] {
     background-image: url('../assets/img/background.png');
+  }
+  .bg-\[url\(\'\.\/assets\/img\/background\.png\'\)\] {
+    background-image: url('./assets/img/background.png');
   }
   .bg-\[url\(\'\/assets\/img\/background\.png\'\)\] {
     background-image: url('/assets/img/background.png');
